@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: darkslateblue;
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        display: flex;
+        position: relative;
+      }
+      .tab {
+        flex: 1;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        cursor: pointer;
+      }
+      .active {
+        background-color: rgb(155, 31, 31);
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        border-radius: 20px;
+        transition: all 500ms;
+      }
+      .desk {
+        transform: translateX(0);
+      }
+      .web {
+        transform: translateX(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab" id="d">Desktop</div>
+      <div class="tab" id="w">Web</div>
+      <div class="active" id="a"></div>
+    </div>
+    <script>
+      const d = document.getElementById("d");
+      const w = document.getElementById("w");
+      const a = document.getElementById("a");
+
+      d.addEventListener("click", () => {
+        a.classList.remove("web");
+        a.classList.add("desk");
+      });
+      w.addEventListener("click", () => {
+        a.classList.remove("desk");
+        a.classList.add("web");
+      });
+    </script>
+  </body>
+</html>

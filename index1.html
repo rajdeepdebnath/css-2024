@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: darkolivegreen;
+        width: 200px;
+        height: 30px;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+      }
+      .tab {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        position: relative;
+        z-index: 2;
+      }
+      .active {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        background-color: brown;
+        border-radius: 20px;
+        transition: all 0.5s;
+      }
+      .d {
+        transform: translateX(0);
+      }
+      .l {
+        transform: translateX(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab" id="d">desktop</div>
+      <div class="tab" id="l">laptop</div>
+      <div class="active" id="a"></div>
+    </div>
+    <script>
+      const d = document.getElementById("d");
+      const l = document.getElementById("l");
+      const a = document.getElementById("a");
+
+      d.addEventListener("click", () => {
+        a.classList.add("d");
+        a.classList.remove("l");
+      });
+
+      l.addEventListener("click", () => {
+        a.classList.add("l");
+        a.classList.remove("d");
+      });
+    </script>
+  </body>
+</html>

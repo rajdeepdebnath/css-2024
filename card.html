@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: cadetblue;
+      }
+      .card {
+        position: relative;
+        margin: auto;
+        margin-top: 100px;
+        width: 300px;
+        padding: 15px;
+        border-radius: 10px;
+        background: linear-gradient(
+          135deg,
+          rgb(242, 177, 250),
+          rgb(241, 217, 244)
+        );
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 40px;
+      }
+      .discount {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgb(30, 30, 110), rgb(63, 63, 211));
+        color: yellow;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      button {
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 3px;
+        font-size: 12px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        background: linear-gradient(rgb(20, 20, 110), rgb(26, 26, 139));
+      }
+      .type {
+        font-size: 18px;
+        line-height: 7px;
+      }
+      .price {
+        font-size: 30px;
+        line-height: 10px;
+        font-weight: 600;
+      }
+      .text {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="discount">Up to 20% discount</div>
+      <p class="type">Standard</p>
+      <p class="price">$ 2000</p>
+      <p class="text">Unlimited storage</p>
+      <p class="text">Unlimited bandwidth</p>
+      <p class="text">Unlimited users</p>
+      <button>Try for 14 days</button>
+    </div>
+  </body>
+</html>

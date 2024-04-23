@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(245, 245, 245);
+      }
+      .card {
+        margin: auto;
+        margin-top: 100px;
+        width: 300px;
+        background-color: rgb(247, 197, 247);
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+      .discount {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: yellow;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 24px;
+        padding: 15px;
+        background: linear-gradient(rgb(13, 13, 123), rgb(42, 42, 139));
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .discount span {
+        display: inline-block;
+        transform: skewY(5deg);
+      }
+      .type {
+        margin: 20px auto;
+        font-size: 20px;
+      }
+      .price {
+        margin: 10px auto;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        font-style: italic;
+      }
+      .price span {
+        font-size: 12px;
+        font-weight: normal;
+      }
+      .text {
+        margin: 7px auto;
+      }
+      button {
+        margin: 25px 0 15px 0;
+        color: white;
+        padding: 5px 30px;
+        font-size: 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background: linear-gradient(rgb(22, 22, 161), rgb(29, 29, 222));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="discount"><span>Upto 20% discount</span></div>
+      <div class="type">Standard</div>
+      <div class="price">$ 2000<span> /year</span></div>
+      <div class="text">Unlimited data</div>
+      <div class="text">Unlimited bandwidth</div>
+      <div class="text">Unlimited users</div>
+      <button>Try for 10 days</button>
+    </div>
+  </body>
+</html>
