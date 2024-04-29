@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: auto;
+        margin-top: 50px;
+        width: 200px;
+        height: 100px;
+        border: 1px solid #d3d3d3;
+        background: linear-gradient(rgb(210, 239, 247), white);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 5px;
+        overflow: hidden;
+      }
+      .rain-drop {
+        width: 1px;
+        height: 7px;
+        background-color: blue;
+        transform: rotateZ(5deg);
+        opacity: 0;
+        animation: raining 1s linear infinite;
+      }
+      @keyframes raining {
+        from {
+          transform: rotateZ(5deg) translateY(0);
+          opacity: 0;
+        }
+        to {
+          transform: rotateZ(5deg) translateY(100px);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+    </div>
+    <script>
+      const divs = document.querySelectorAll(".rain-drop");
+
+      divs.forEach((d) => {
+        d.style.animationDelay = `${Math.random() * 1000}ms`;
+        d.style.animationDuration = `${Math.random() * 1000}ms`;
+      });
+    </script>
+  </body>
+</html>

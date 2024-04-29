@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: auto;
+        margin-top: 100px;
+        width: 200px;
+        aspect-ratio: 1;
+        border: 1px solid rgb(117, 115, 115);
+        background: linear-gradient(rgb(223, 236, 242), white);
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 5px;
+        overflow: hidden;
+      }
+      .rain-drop {
+        width: 1px;
+        height: 10px;
+        background-color: blue;
+        transform: rotateZ(5deg);
+        animation: raining 1s linear infinite;
+        opacity: 0;
+      }
+      @keyframes raining {
+        from {
+          transform: rotateZ(5deg) translateY(0px);
+          opacity: 0;
+        }
+        to {
+          transform: rotateZ(5deg) translateY(200px);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+      <div class="rain-drop"></div>
+    </div>
+    <script>
+      let divs = document.querySelectorAll(".rain-drop");
+
+      divs.forEach((d) => {
+        d.style.animationDelay = `${Math.random() * 10}s`;
+        d.style.animationDuration = `${Math.random() * 1000}ms`;
+      });
+    </script>
+  </body>
+</html>
