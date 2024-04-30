@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: auto;
+        margin-top: 100px;
+        width: 200px;
+        aspect-ratio: 1;
+        border: 0px solid red;
+      }
+      .ring {
+        font-size: 10px;
+        width: 10em;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: conic-gradient(
+          rgb(96, 96, 235),
+          rgb(241, 115, 115),
+          rgb(103, 241, 103),
+          rgb(0, 213, 255),
+          rgb(168, 130, 238)
+        );
+        position: relative;
+        animation: rotation 1s linear infinite;
+      }
+      .ring::after {
+        content: "";
+        position: absolute;
+        width: 8em;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: white;
+        top: 10%;
+        left: 10%;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ring"></div>
+    </div>
+  </body>
+</html>
